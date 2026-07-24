@@ -107,3 +107,29 @@ document.querySelectorAll(".project-card").forEach(card=>{
     });
 
 });
+
+
+
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", revealSections);
+
+function revealSections(){
+
+    reveals.forEach(section=>{
+
+        const top = section.getBoundingClientRect().top;
+
+        const visible = window.innerHeight - 120;
+
+        if(top < visible){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+revealSections();

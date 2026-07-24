@@ -1213,3 +1213,219 @@ html{
     color:#60A5FA;
 
 }
+
+
+
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 35px rgba(59,130,246,.35);
+
+}
+
+::selection{
+
+    background:#3B82F6;
+
+    color:white;
+
+}
+
+
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3B82F6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#60A5FA;
+
+}
+
+
+
+
+.hero-image img{
+
+    transition:.5s;
+
+}
+
+.hero-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+.navbar-brand{
+
+    transition:.35s;
+
+}
+
+.navbar-brand:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+section{
+
+    padding:140px 0;
+
+}
+
+
+
+
+/*=========================
+        Timeline
+=========================*/
+
+.timeline{
+
+    position:relative;
+
+    max-width:850px;
+
+    margin:0 auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:24px;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+
+    background:rgba(255,255,255,.1);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-right:70px;
+
+    margin-bottom:60px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    right:16px;
+
+    top:6px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#3B82F6;
+
+    box-shadow:0 0 20px rgba(59,130,246,.5);
+
+}
+
+.timeline-content{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.35s;
+
+}
+
+.timeline-content span{
+
+    color:#3B82F6;
+
+    font-weight:600;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateX(-8px);
+
+    border-color:#3B82F6;
+
+    box-shadow:0 15px 35px rgba(59,130,246,.2);
+
+}
+
+
+@media (max-width:768px){
+
+    .timeline-item{
+
+        padding-right:55px;
+
+    }
+
+}
