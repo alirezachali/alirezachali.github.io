@@ -15,13 +15,13 @@ new Typed("#typing",{
 
     strings:[
 
-        "Full Stack Developer",
+        "Backend Developer",
 
         "Laravel Developer",
 
         "PHP Programmer",
 
-        "Backend Engineer"
+        "REST Api"
 
     ],
 

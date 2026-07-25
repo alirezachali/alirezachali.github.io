@@ -1,10 +1,15 @@
 /* فونت */
 body{
-    font-family: Vazirmatn, sans-serif;
+    font-family: "Rubik", sans-serif;
     background:#0F172A;
     color:#F8FAFC;
     overflow-x:hidden;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
+
+
 
 /* لینک ها */
 a{
@@ -1132,9 +1137,9 @@ html{
 
 .social-links{
 
-    display:flex;
+    display: inline-flex;
 
-    gap:18px;
+    gap:10px;
 
 }
 
