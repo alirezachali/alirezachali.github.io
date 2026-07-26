@@ -81,7 +81,7 @@ const observer = new IntersectionObserver(entries => {
 
             entry.target.style.opacity = "1";
 
-            entry.target.style.transform = "translateY(0)";
+            entry.target.style.transform = "translateY(1)";
 
             entry.target.style.transition = ".6s ease";
 
@@ -133,3 +133,9 @@ function revealSections(){
 }
 
 revealSections();
+
+
+
+const myModal = new bootstrap.Modal(document.getElementById('donatemodal'))
+
+  

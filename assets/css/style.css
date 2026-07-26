@@ -838,27 +838,7 @@ html{
 
 }
 
-.project-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(15,23,42,.82);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    opacity:0;
-
-    transition:.35s;
-
-}
-
-.project-card:hover .project-overlay{
+.project-card:hover{
 
     opacity:1;
 
@@ -866,13 +846,13 @@ html{
 
 .project-image{
 
-    transition:.45s;
+    transition:.75s;
 
 }
 
 .project-card:hover .project-image{
 
-    transform:scale(1.08);
+    transform:scale(1.2);
 
 }
 
@@ -880,16 +860,12 @@ html{
 
     opacity:0;
 
-    transform:translateY(60px);
-
-}
-
-
-.project-card{
+    transform:translateY(30px);
 
     position:relative;
 
 }
+
 
 .project-card::before{
 
@@ -905,11 +881,11 @@ html{
 
     rgba(59,130,246,.18),
 
-    transparent 35%);
+    transparent 45%);
 
     opacity:0;
 
-    transition:.2s;
+    transition:.9s;
 
     pointer-events:none;
 
@@ -1029,9 +1005,9 @@ html{
 
 .contact-card i{
 
-    font-size:42px;
+    font-size:70px;
 
-    color:#3B82F6;
+    color:#29a6ee;
 
     margin-bottom:20px;
 
@@ -1434,3 +1410,4 @@ section{
     }
 
 }
+
