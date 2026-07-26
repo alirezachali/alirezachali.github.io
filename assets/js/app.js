@@ -134,8 +134,3 @@ function revealSections(){
 
 revealSections();
 
-
-
-const myModal = new bootstrap.Modal(document.getElementById('donatemodal'))
-
-  
