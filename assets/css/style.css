@@ -1,4 +1,6 @@
-/* فونت */
+/*==========================
+           Font
+===========================*/
 body{
     font-family: "Rubik", sans-serif;
     background:#0F172A;
@@ -11,12 +13,19 @@ body{
 
 
 
-/* لینک ها */
+/*==========================
+          Links
+===========================*/
 a{
     text-decoration:none;
 }
 
-/* Hero */
+
+
+
+/*==========================
+        Hero Section
+===========================*/
 
 .hero{
 
@@ -33,7 +42,7 @@ a{
 
 }
 
-/* متن */
+/* Hero Text */
 
 .hero h1{
 
@@ -47,7 +56,7 @@ a{
 
 }
 
-/* تصویر */
+/* Hero Image */
 
 .hero-image{
 
@@ -72,15 +81,65 @@ a{
     box-shadow:
     0 0 60px rgba(59,130,246,.25);
 
+    backdrop-filter:blur(18px);
+
+    position:relative;
+
 }
+
 
 .hero-image img{
 
     width:85%;
 
+    transition:.5s;
+
 }
 
-/* دکمه */
+
+.hero-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:460px;
+
+    height:460px;
+
+    border:2px solid rgba(59,130,246,.3);
+
+    border-radius:50%;
+
+    animation:rotate 16s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* Hero Button */
 
 .btn{
 
@@ -104,9 +163,98 @@ a{
 
 }
 
+/* Hero Background */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:0;
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Grid */
+
+.grid{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    mask-image:linear-gradient(to bottom, black 40%, transparent);
+
+}
+
+/* Glow */
+
+.glow{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.25;
+
+}
+
+.glow-1{
+
+    background:#2563eb;
+
+    top:-150px;
+
+    right:-120px;
+
+}
+
+.glow-2{
+
+    background:#06b6d4;
+
+    bottom:-180px;
+
+    left:-150px;
+
+}
+
+
+
+
 
 /*==========================
-        Navbar
+           Navbar
 ===========================*/
 
 .custom-navbar{
@@ -195,9 +343,72 @@ a{
 
 }
 
+/*  Active Navigation  */
+
+.nav-link{
+
+    overflow:hidden;
+
+}
+
+.nav-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    right:50%;
+
+    transform:translateX(50%);
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#3B82F6;
+
+    transition:.35s;
+
+    box-shadow:
+    0 0 12px #3B82F6;
+
+}
+
+.nav-link:hover::before{
+
+    width:100%;
+
+}
+
+.nav-link.active::before{
+
+    width:100%;
+
+}
+
+.nav-link.active{
+
+    color:#60A5FA !important;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+
 
 /*=========================
-      Typing
+         Typing
 =========================*/
 
 #typing{
@@ -208,39 +419,12 @@ a{
 
 }
 
+
+
+
 /*=========================
-   Floating Cards
+     Floating Cards
 =========================*/
-
-.hero-image{
-
-    width:420px;
-
-    height:420px;
-
-    margin:auto;
-
-    border-radius:30px;
-
-    background:rgba(255,255,255,.04);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    position:relative;
-
-    box-shadow:
-
-        0 20px 60px rgba(0,0,0,.35);
-
-}
 
 .floating-card{
 
@@ -318,46 +502,12 @@ a{
 
 }
 
-/*=========================
-      Glow Ring
-=========================*/
 
-.hero-image::before{
 
-    content:"";
 
-    position:absolute;
-
-    width:460px;
-
-    height:460px;
-
-    border:2px solid rgba(59,130,246,.3);
-
-    border-radius:50%;
-
-    animation:rotate 16s linear infinite;
-
-}
-
-@keyframes rotate{
-
-    from{
-
-        transform:rotate(0deg);
-
-    }
-
-    to{
-
-        transform:rotate(360deg);
-
-    }
-
-}
 
 /*=========================
-      Scroll
+          Scroll
 =========================*/
 
 .scroll-down{
@@ -396,162 +546,10 @@ a{
 
 
 
-/*==============================
-        Hero Background
-==============================*/
 
-.hero{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-.hero-bg{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:0;
-
-}
-
-.hero .container{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-/* Grid */
-
-.grid{
-
-    position:absolute;
-
-    inset:0;
-
-    background-image:
-
-        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-
-        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-
-    background-size:40px 40px;
-
-    mask-image:linear-gradient(to bottom, black 40%, transparent);
-
-}
-
-/* Glow */
-
-.glow{
-
-    position:absolute;
-
-    width:500px;
-
-    height:500px;
-
-    border-radius:50%;
-
-    filter:blur(120px);
-
-    opacity:.25;
-
-}
-
-.glow-1{
-
-    background:#2563eb;
-
-    top:-150px;
-
-    right:-120px;
-
-}
-
-.glow-2{
-
-    background:#06b6d4;
-
-    bottom:-180px;
-
-    left:-150px;
-
-}
-
-
-/*=========================
-    Active Navigation
-==========================*/
-
-.nav-link{
-
-    overflow:hidden;
-
-}
-
-.nav-link::before{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:-8px;
-
-    right:50%;
-
-    transform:translateX(50%);
-
-    width:0;
-
-    height:3px;
-
-    border-radius:20px;
-
-    background:#3B82F6;
-
-    transition:.35s;
-
-    box-shadow:
-    0 0 12px #3B82F6;
-
-}
-
-.nav-link:hover::before{
-
-    width:100%;
-
-}
-
-.nav-link.active::before{
-
-    width:100%;
-
-}
-
-.nav-link.active{
-
-    color:#60A5FA !important;
-
-}
-
-
-html{
-
-    scroll-behavior:smooth;
-
-}
-
-
-
-/*=========================
-      Highlights
-=========================*/
+/*===========================
+      Highlights Section
+=============================*/
 
 .highlights{
 
@@ -621,7 +619,7 @@ html{
 
 
 /*==============================
-            About
+         About Section
 ==============================*/
 
 .about{
@@ -711,7 +709,7 @@ html{
 
 
 /*==============================
-          Portfolio
+      Portfolio Section
 ==============================*/
 
 .portfolio{
@@ -825,10 +823,7 @@ html{
 }
 
 
-
-/*==========================
-        Project Preview
-===========================*/
+/*  Project Preview  */
 
 .project-preview{
 
@@ -900,7 +895,7 @@ html{
 
 
 /*==========================
-        Skills
+      Skills Section
 ===========================*/
 
 .skills{
@@ -1271,17 +1266,6 @@ html{
 
 
 
-.hero-image img{
-
-    transition:.5s;
-
-}
-
-.hero-image:hover img{
-
-    transform:scale(1.05);
-
-}
 
 
 .navbar-brand{
@@ -1415,4 +1399,5 @@ section{
 
 .enamad-logo{
     margin-right: 50px;
+    margin-bottom: 50px;
 }
