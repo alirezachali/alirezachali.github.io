@@ -1374,10 +1374,6 @@ section{
 
 .enamad-logo{
 
-    margin-right: 50px;
-
-    margin-bottom: 50px;
-
     transition:.55s;
     
 }
@@ -1548,4 +1544,23 @@ section{
 
     transform:scale(1);
 
+}
+
+.support-btn{
+
+    margin-top: 48px;
+
+    margin-left: 30px;
+}
+
+.support-h{
+
+    color: rgb(252, 46, 46);
+
+    font-size: 20px;
+}
+
+.btn-1{
+
+    color: #f9fbfcf8;
 }
