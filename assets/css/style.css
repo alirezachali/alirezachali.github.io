@@ -1387,3 +1387,165 @@ section{
     transform:translateY(-15px);
 
 }
+
+
+
+/*==================================
+        Support Modal
+===================================*/
+
+.support-modal{
+
+    background:rgba(15,23,42,.75);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
+
+}
+
+.support-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.06);
+
+    font-size:36px;
+
+}
+
+.support-text{
+
+    color:#94A3B8;
+
+    max-width:520px;
+
+    margin:20px auto 0;
+
+    line-height:2;
+
+}
+
+.support-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    height:180px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.support-card img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+}
+
+.support-card span{
+
+    font-weight:600;
+
+}
+
+.support-card i{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    opacity:0;
+
+    transform:translate(-8px,-8px);
+
+    transition:.3s;
+
+}
+
+.support-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+    box-shadow:0 18px 45px rgba(59,130,246,.22);
+
+    color:#fff;
+
+}
+
+.support-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.support-card:hover i{
+
+    opacity:1;
+
+    transform:translate(0,0);
+
+}
+
+.modal.fade .modal-dialog{
+
+    transform:scale(.92);
+
+    transition:.25s;
+
+}
+
+.modal.show .modal-dialog{
+
+    transform:scale(1);
+
+}
