@@ -4,6 +4,52 @@ html{
 
 }
 
+a{
+
+    text-decoration:none;
+
+}
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 35px rgba(59,130,246,.35);
+
+}
+
+::selection{
+
+    background:#3B82F6;
+
+    color:white;
+
+}
+
 
 
 /*==========================
@@ -16,15 +62,6 @@ body{
     overflow-x:hidden;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-
-
-/*==========================
-          Links
-===========================*/
-a{
-    text-decoration:none;
 }
 
 
@@ -1260,19 +1297,13 @@ section{
 
     display: inline-flex;
 
-    gap:10px;
+    gap:20px;
 
 }
 
 .social-links a{
 
-    width:50px;
-
-    height:50px;
-
-    border-radius:50%;
-
-    background:#1E293B;
+    font-size:50px;
 
     color:#fff;
 
@@ -1282,17 +1313,15 @@ section{
 
     align-items:center;
 
-    font-size:22px;
-
-    transition:.35s;
+    transition:.45s;
 
 }
 
 .social-links a:hover{
 
-    background:#3B82F6;
+    transform:translateY(-15px);
 
-    transform:translateY(-5px);
+    color:#1044f0;
 
 }
 
@@ -1326,61 +1355,17 @@ section{
 
     color:#3B82F6;
 
-    font-size:34px;
+    font-size:70px;
 
-    transition:.35s;
+    transition:.55s;
 
 }
 
 .back-top:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-15px);
 
-    color:#60A5FA;
-
-}
-
-
-
-
-.reveal{
-
-    opacity:0;
-
-    transform:translateY(60px);
-
-    transition:all .8s ease;
-
-}
-
-.reveal.active{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-
-.btn{
-
-    transition:.35s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:0 12px 35px rgba(59,130,246,.35);
-
-}
-
-::selection{
-
-    background:#3B82F6;
-
-    color:white;
+    color:#a1bddf;
 
 }
 
@@ -1388,6 +1373,17 @@ section{
 /* Enamad Logo*/
 
 .enamad-logo{
+
     margin-right: 50px;
+
     margin-bottom: 50px;
+
+    transition:.55s;
+    
+}
+
+.enamad-logo:hover{
+
+    transform:translateY(-15px);
+
 }
